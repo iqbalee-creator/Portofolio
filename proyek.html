@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Galeri Proyek Lengkap Alex Pratama - Eksplorasi aplikasi web, dashboard bisnis, antarmuka mobile, dan design system.">
+  <meta name="author" content="Alex Pratama">
+  <title>Proyek | Portofolio Pribadi - Alex Pratama</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       HEADER / NAVBAR
+       ====================================================================== -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="nav-brand" aria-label="Beranda Alex Pratama">
+        <span class="nav-brand-logo">AP</span>
+        <span>Alex<span class="gradient-text">.dev</span></span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav id="nav-links" class="nav-links" aria-label="Navigasi Utama">
+        <a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Beranda</a>
+        <a href="proyek.html" class="nav-link active"><i class="fa-solid fa-laptop-code"></i> Proyek</a>
+        <a href="kontak.html" class="nav-link"><i class="fa-solid fa-envelope"></i> Kontak</a>
+      </nav>
+
+      <!-- Action Items: Theme Toggle & Hamburger -->
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Beralih Mode Tema" title="Ganti Mode Tampilan">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <button id="hamburger-btn" class="hamburger" aria-label="Buka Menu Navigasi" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         PAGE HERO BANNER
+         ====================================================================== -->
+    <section class="section-padding" style="padding-bottom: 2rem;">
+      <div class="container">
+        <div class="section-header" style="margin-bottom: 2.5rem;">
+          <span class="section-tag"><i class="fa-solid fa-folder-open"></i> Galeri Proyek</span>
+          <h1 class="section-title">Koleksi Karya & Eksplorasi Digital</h1>
+          <p class="section-desc">
+            Kumpulan aplikasi web fungsional, prototipe antarmuka, dan sistem desain yang dibangun dengan fokus pada performa, kebersihan kode, dan pengalaman pengguna terbaik.
+          </p>
+        </div>
+
+        <!-- Filter & Search Toolbar -->
+        <div class="projects-controls">
+          <div class="filter-group" role="tablist" aria-label="Filter Kategori Proyek">
+            <button type="button" class="filter-btn active" data-filter="all">Semua Proyek</button>
+            <button type="button" class="filter-btn" data-filter="web">Web App</button>
+            <button type="button" class="filter-btn" data-filter="frontend">Frontend & Dashboard</button>
+            <button type="button" class="filter-btn" data-filter="uiux">UI/UX Design</button>
+            <button type="button" class="filter-btn" data-filter="mobile">Mobile App</button>
+          </div>
+
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="project-search" placeholder="Cari nama atau teknologi..." aria-label="Cari proyek">
+          </div>
+        </div>
+
+        <!-- ==================================================================
+             PROJECTS GRID
+             ================================================================== -->
+        <div class="projects-grid" id="projects-container">
+
+          <!-- Card 1: E-Commerce Gadget Store -->
+          <article class="project-card" data-category="web">
+            <div class="project-thumb">
+              <span class="project-category-badge">Web Application</span>
+              <svg viewBox="0 0 800 450" width="100%" height="100%">
+                <defs>
+                  <linearGradient id="p1Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#4f46e5" />
+                    <stop offset="100%" stop-color="#06b6d4" />
+                  </linearGradient>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#p1Grad)" />
+                <rect x="80" y="50" width="640" height="350" rx="12" fill="#0f172a" opacity="0.88" />
+                <circle cx="115" cy="80" r="5" fill="#ef4444" />
+                <circle cx="135" cy="80" r="5" fill="#f59e0b" />
+                <circle cx="155" cy="80" r="5" fill="#10b981" />
+                <rect x="110" y="110" width="160" height="240" rx="8" fill="#1e293b" />
+                <rect x="290" y="110" width="190" height="110" rx="8" fill="#1e293b" />
+                <rect x="500" y="110" width="190" height="110" rx="8" fill="#1e293b" />
+                <rect x="290" y="240" width="400" height="110" rx="8" fill="#1e293b" />
+              </svg>
+            </div>
+            <div class="project-content">
+              <h2 class="project-title">E-Commerce Gadget Store</h2>
+              <p class="project-desc">
+                Toko daring modern dengan keranjang belanja interaktif realtime, filter katalog harga bertingkat, dan flow checkout terstruktur.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">HTML5</span>
+                <span class="tech-badge">CSS3 / Sass</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">LocalStorage</span>
+              </div>
+              <div class="project-actions">
+                <button type="button" class="btn btn-secondary btn-sm open-modal-btn" data-id="1">
+                  <i class="fa-solid fa-circle-info"></i> Detail Lengkap
+                </button>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: SaaS Analytics Dashboard -->
+          <article class="project-card" data-category="frontend">
+            <div class="project-thumb">
+              <span class="project-category-badge">Frontend Web App</span>
+              <svg viewBox="0 0 800 450" width="100%" height="100%">
+                <defs>
+                  <linearGradient id="p2Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#2563eb" />
+                    <stop offset="100%" stop-color="#10b981" />
+                  </linearGradient>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#p2Grad)" />
+                <rect x="80" y="50" width="640" height="350" rx="12" fill="#0f172a" opacity="0.88" />
+                <circle cx="115" cy="80" r="5" fill="#ef4444" />
+                <circle cx="135" cy="80" r="5" fill="#f59e0b" />
+                <circle cx="155" cy="80" r="5" fill="#10b981" />
+                <line x1="110" y1="300" x2="680" y2="300" stroke="#334155" stroke-width="2"/>
+                <polyline points="130,280 230,220 330,250 430,170 530,190 650,130" fill="none" stroke="#10b981" stroke-width="4" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="project-content">
+              <h2 class="project-title">SaaS Financial & Analytics Dashboard</h2>
+              <p class="project-desc">
+                Dashboard analitik keuangan bisnis dengan diagram data interaktif, ekspor ringkasan CSV/PDF, dan integrasi mode gelap penuh.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">CSS Grid</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">SVG Charts</span>
+                <span class="tech-badge">Dark Mode</span>
+              </div>
+              <div class="project-actions">
+                <button type="button" class="btn btn-secondary btn-sm open-modal-btn" data-id="2">
+                  <i class="fa-solid fa-circle-info"></i> Detail Lengkap
+                </button>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: TaskMaster Kanban -->
+          <article class="project-card" data-category="web">
+            <div class="project-thumb">
+              <span class="project-category-badge">Productivity</span>
+              <svg viewBox="0 0 800 450" width="100%" height="100%">
+                <defs>
+                  <linearGradient id="p3Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#7c3aed" />
+                    <stop offset="100%" stop-color="#ec4899" />
+                  </linearGradient>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#p3Grad)" />
+                <rect x="80" y="50" width="640" height="350" rx="12" fill="#0f172a" opacity="0.88" />
+                <circle cx="115" cy="80" r="5" fill="#ef4444" />
+                <circle cx="135" cy="80" r="5" fill="#f59e0b" />
+                <circle cx="155" cy="80" r="5" fill="#10b981" />
+                <rect x="110" y="115" width="170" height="240" rx="8" fill="#1e293b" />
+                <rect x="310" y="115" width="170" height="240" rx="8" fill="#1e293b" />
+                <rect x="510" y="115" width="170" height="240" rx="8" fill="#1e293b" />
+              </svg>
+            </div>
+            <div class="project-content">
+              <h2 class="project-title">Aplikasi Kanban (TaskMaster)</h2>
+              <p class="project-desc">
+                Papan manajemen tugas kolaboratif dengan fitur drag & drop mulus, filter prioritas tugas, dan penyimpanan otomatis berbasis lokal.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">HTML5 Drag & Drop</span>
+                <span class="tech-badge">Modern JS</span>
+                <span class="tech-badge">CSS Animations</span>
+              </div>
+              <div class="project-actions">
+                <button type="button" class="btn btn-secondary btn-sm open-modal-btn" data-id="3">
+                  <i class="fa-solid fa-circle-info"></i> Detail Lengkap
+                </button>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Healthcare Clinic Portal -->
+          <article class="project-card" data-category="web">
+            <div class="project-thumb">
+              <span class="project-category-badge">Healthcare Web</span>
+              <svg viewBox="0 0 800 450" width="100%" height="100%">
+                <defs>
+                  <linearGradient id="p4Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#059669" />
+                    <stop offset="100%" stop-color="#0284c7" />
+                  </linearGradient>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#p4Grad)" />
+                <rect x="80" y="50" width="640" height="350" rx="12" fill="#0f172a" opacity="0.88" />
+                <circle cx="115" cy="80" r="5" fill="#ef4444" />
+                <circle cx="135" cy="80" r="5" fill="#f59e0b" />
+                <circle cx="155" cy="80" r="5" fill="#10b981" />
+                <!-- Medical Cross Badge -->
+                <circle cx="400" cy="200" r="60" fill="#10b981" opacity="0.25" />
+                <rect x="385" y="160" width="30" height="80" rx="6" fill="#10b981" />
+                <rect x="360" y="185" width="80" height="30" rx="6" fill="#10b981" />
+              </svg>
+            </div>
+            <div class="project-content">
+              <h2 class="project-title">Healthcare Clinic Portal & Booking</h2>
+              <p class="project-desc">
+                Portal reservasi janji temu dokter online dengan kalender interaktif, validasi slot waktu anti bentrok, dan ringkasan jadwal pasien.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">CSS Grid</span>
+                <span class="tech-badge">Form API</span>
+                <span class="tech-badge">Accessible</span>
+              </div>
+              <div class="project-actions">
+                <button type="button" class="btn btn-secondary btn-sm open-modal-btn" data-id="4">
+                  <i class="fa-solid fa-circle-info"></i> Detail Lengkap
+                </button>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5: Design System & UI Library -->
+          <article class="project-card" data-category="uiux">
+            <div class="project-thumb">
+              <span class="project-category-badge">UI/UX & Design</span>
+              <svg viewBox="0 0 800 450" width="100%" height="100%">
+                <defs>
+                  <linearGradient id="p5Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#d946ef" />
+                    <stop offset="100%" stop-color="#8b5cf6" />
+                  </linearGradient>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#p5Grad)" />
+                <rect x="80" y="50" width="640" height="350" rx="12" fill="#0f172a" opacity="0.88" />
+                <circle cx="115" cy="80" r="5" fill="#ef4444" />
+                <circle cx="135" cy="80" r="5" fill="#f59e0b" />
+                <circle cx="155" cy="80" r="5" fill="#10b981" />
+                <!-- UI Components visual Mockup -->
+                <rect x="120" y="120" width="130" height="40" rx="20" fill="#a855f7" />
+                <rect x="270" y="120" width="130" height="40" rx="8" fill="#3b82f6" />
+                <rect x="420" y="120" width="240" height="40" rx="8" fill="#1e293b" stroke="#64748b" stroke-width="2"/>
+                <rect x="120" y="185" width="260" height="150" rx="12" fill="#1e293b" />
+                <rect x="400" y="185" width="260" height="150" rx="12" fill="#1e293b" />
+              </svg>
+            </div>
+            <div class="project-content">
+              <h2 class="project-title">Design System & UI Component Library</h2>
+              <p class="project-desc">
+                Koleksi komponen UI web modular dengan panduan token desain, standar warna WCAG 2.1 AA, dan dokumentasi interaktif.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">Figma</span>
+                <span class="tech-badge">CSS Variables</span>
+                <span class="tech-badge">WCAG a11y</span>
+                <span class="tech-badge">Modular HTML</span>
+              </div>
+              <div class="project-actions">
+                <button type="button" class="btn btn-secondary btn-sm open-modal-btn" data-id="5">
+                  <i class="fa-solid fa-circle-info"></i> Detail Lengkap
+                </button>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6: Mobile Interactive Quiz App -->
+          <article class="project-card" data-category="mobile">
+            <div class="project-thumb">
+              <span class="project-category-badge">Mobile Web App</span>
+              <svg viewBox="0 0 800 450" width="100%" height="100%">
+                <defs>
+                  <linearGradient id="p6Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#ea580c" />
+                    <stop offset="100%" stop-color="#f59e0b" />
+                  </linearGradient>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#p6Grad)" />
+                <rect x="80" y="50" width="640" height="350" rx="12" fill="#0f172a" opacity="0.88" />
+                <circle cx="115" cy="80" r="5" fill="#ef4444" />
+                <circle cx="135" cy="80" r="5" fill="#f59e0b" />
+                <circle cx="155" cy="80" r="5" fill="#10b981" />
+                <!-- Mobile Screen Mockup -->
+                <rect x="290" y="70" width="220" height="310" rx="24" fill="#1e293b" stroke="#475569" stroke-width="3"/>
+                <circle cx="400" cy="90" r="4" fill="#64748b"/>
+                <rect x="310" y="115" width="180" height="60" rx="8" fill="#f59e0b" opacity="0.8"/>
+                <rect x="310" y="190" width="180" height="35" rx="6" fill="#334155"/>
+                <rect x="310" y="235" width="180" height="35" rx="6" fill="#10b981"/>
+                <rect x="310" y="280" width="180" height="35" rx="6" fill="#334155"/>
+              </svg>
+            </div>
+            <div class="project-content">
+              <h2 class="project-title">Aplikasi Mobile Kuis Edukasi</h2>
+              <p class="project-desc">
+                Aplikasi kuis pembelajaran interaktif ramah layar sentuh dengan animasi timer, ringkasan skor akurasi, dan leaderboard.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">Mobile-First CSS</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">Web Audio</span>
+                <span class="tech-badge">PWA Ready</span>
+              </div>
+              <div class="project-actions">
+                <button type="button" class="btn btn-secondary btn-sm open-modal-btn" data-id="6">
+                  <i class="fa-solid fa-circle-info"></i> Detail Lengkap
+                </button>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- No Projects Found Message -->
+          <div id="no-projects-msg" class="no-projects-msg" style="display: none;">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <h3>Tidak Ada Proyek yang Cocok</h3>
+            <p>Coba gunakan kata kunci pencarian yang lain atau pilih kategori "Semua Proyek".</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         CTA BANNER
+         ====================================================================== -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="cta-banner">
+          <h2 class="cta-title">Tertarik Membangun Proyek Bersama?</h2>
+          <p class="cta-desc">
+            Saya siap membantu Anda merealisasikan ide aplikasi web impian dengan pendekatan modern, kode bersih, dan estetika premium.
+          </p>
+          <a href="kontak.html" class="btn cta-btn">
+            <i class="fa-regular fa-paper-plane"></i> Konsultasikan Proyek Anda
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================================
+       PROJECT DETAIL MODAL POPUP
+       ====================================================================== -->
+  <div id="project-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-dialog">
+      <button id="modal-close-btn" class="modal-close-btn" aria-label="Tutup Dialog Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div id="modal-img-container" class="modal-hero-img"></div>
+      <div class="modal-body">
+        <span id="modal-category" class="modal-category-tag">Kategori</span>
+        <h2 id="modal-title" class="modal-title">Judul Proyek</h2>
+        <p id="modal-desc" class="modal-desc">Deskripsi proyek yang lengkap.</p>
+
+        <div class="modal-detail-section">
+          <h4 class="modal-detail-title"><i class="fa-solid fa-puzzle-piece" style="color: var(--accent-primary);"></i> Tantangan Proyek</h4>
+          <p id="modal-challenges" class="modal-desc" style="margin-bottom: 0.8rem;"></p>
+        </div>
+
+        <div class="modal-detail-section">
+          <h4 class="modal-detail-title"><i class="fa-solid fa-lightbulb" style="color: #f59e0b;"></i> Solusi Teknis</h4>
+          <p id="modal-solution" class="modal-desc" style="margin-bottom: 0.8rem;"></p>
+        </div>
+
+        <div class="modal-detail-section">
+          <h4 class="modal-detail-title"><i class="fa-solid fa-list-check" style="color: var(--success);"></i> Fitur Utama</h4>
+          <div id="modal-features" class="modal-feature-list"></div>
+        </div>
+
+        <div class="modal-detail-section">
+          <h4 class="modal-detail-title"><i class="fa-solid fa-layer-group" style="color: var(--accent-secondary);"></i> Teknologi yang Digunakan</h4>
+          <div id="modal-tech" class="project-tech"></div>
+        </div>
+
+        <div class="modal-footer-actions">
+          <a id="modal-live-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo Langsung
+          </a>
+          <a id="modal-github-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+            <i class="fa-brands fa-github"></i> Lihat Repository
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       FOOTER
+       ====================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="nav-brand">
+            <span class="nav-brand-logo">AP</span>
+            <span>Alex<span class="gradient-text">.dev</span></span>
+          </a>
+          <p class="footer-brand-p">
+            Website portofolio profesional untuk menampilkan karya rekayasa web, eksplorasi teknologi modern, dan solusi desain antarmuka.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Navigasi Halaman</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Beranda</a></li>
+            <li><a href="proyek.html" class="footer-link">Galeri Proyek</a></li>
+            <li><a href="kontak.html" class="footer-link">Hubungi Saya</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Kategori Proyek</h4>
+          <ul class="footer-links">
+            <li><a href="proyek.html" class="footer-link">Web Applications</a></li>
+            <li><a href="proyek.html" class="footer-link">Frontend & Dashboards</a></li>
+            <li><a href="proyek.html" class="footer-link">UI/UX & Design Systems</a></li>
+            <li><a href="proyek.html" class="footer-link">Mobile Responsive</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Terhubung</h4>
+          <ul class="footer-links">
+            <li><a href="https://github.com/iqbalee-creator" target="_blank" rel="noopener noreferrer" class="footer-link"><i class="fa-brands fa-github"></i> GitHub</a></li>
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-link"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer-link"><i class="fa-brands fa-x-twitter"></i> Twitter / X</a></li>
+            <li><a href="mailto:alex.pratama@example.com" class="footer-link"><i class="fa-solid fa-envelope"></i> Email Langsung</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Alex Pratama. Dibuat dengan HTML, CSS, dan JavaScript vanilla.</div>
+        <div>Status: Siap Menerima Proyek Baru 🚀</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back To Top Floating Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Kembali ke Bagian Atas Halaman" title="Kembali ke Atas">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>

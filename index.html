@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio Pribadi Alex Pratama - Full-Stack Developer & UI/UX Designer. Berpengalaman membangun aplikasi web modern, responsif, dan performa tinggi.">
+  <meta name="author" content="Alex Pratama">
+  <title>Beranda | Portofolio Pribadi - Alex Pratama</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       HEADER / NAVBAR
+       ====================================================================== -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="nav-brand" aria-label="Beranda Alex Pratama">
+        <span class="nav-brand-logo">AP</span>
+        <span>Alex<span class="gradient-text">.dev</span></span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav id="nav-links" class="nav-links" aria-label="Navigasi Utama">
+        <a href="index.html" class="nav-link active"><i class="fa-solid fa-house"></i> Beranda</a>
+        <a href="proyek.html" class="nav-link"><i class="fa-solid fa-laptop-code"></i> Proyek</a>
+        <a href="kontak.html" class="nav-link"><i class="fa-solid fa-envelope"></i> Kontak</a>
+      </nav>
+
+      <!-- Action Items: Theme Toggle & Hamburger -->
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Beralih Mode Tema" title="Ganti Mode Tampilan">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <button id="hamburger-btn" class="hamburger" aria-label="Buka Menu Navigasi" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         HERO SECTION
+         ====================================================================== -->
+    <section class="hero">
+      <div class="hero-glow-bg"></div>
+      <div class="container hero-grid">
+        <div class="hero-info">
+          <div class="hero-status-pill">
+            <span class="status-dot"></span>
+            <span>Tersedia untuk Proyek Baru & Freelance</span>
+          </div>
+          <h1 class="hero-title">
+            Halo, Saya <span class="gradient-text">Alex Pratama</span> 👋<br>
+            Full-Stack Web Developer & UI Designer
+          </h1>
+          <p class="hero-bio">
+            Membangun pengalaman web modern, elegan, dan berkinerja tinggi. Saya mengkhususkan diri dalam pengembangan antarmuka interaktif yang responsif dan arsitektur kode bersih.
+          </p>
+          <div class="hero-cta">
+            <a href="proyek.html" class="btn btn-primary">
+              <i class="fa-solid fa-briefcase"></i> Lihat Proyek Saya
+            </a>
+            <a href="kontak.html" class="btn btn-secondary">
+              <i class="fa-regular fa-paper-plane"></i> Hubungi Saya
+            </a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://github.com/iqbalee-creator" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
+          </div>
+        </div>
+
+        <!-- Hero Avatar Visual -->
+        <div class="hero-visual">
+          <div class="avatar-wrapper">
+            <!-- Modern SVG Developer Portrait -->
+            <svg viewBox="0 0 320 380" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="avatarBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#1e1b4b" />
+                  <stop offset="100%" stop-color="#0f172a" />
+                </linearGradient>
+                <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#6366f1" />
+                  <stop offset="100%" stop-color="#06b6d4" />
+                </linearGradient>
+              </defs>
+              <rect width="100%" height="100%" fill="url(#avatarBg)" />
+              
+              <!-- Subtle background tech circles -->
+              <circle cx="160" cy="170" r="130" fill="none" stroke="rgba(99, 102, 241, 0.15)" stroke-width="1.5" stroke-dasharray="8 6"/>
+              <circle cx="160" cy="170" r="95" fill="none" stroke="rgba(6, 182, 212, 0.2)" stroke-width="1.5"/>
+
+              <!-- Developer Character Graphic -->
+              <!-- Body/Shirt -->
+              <path d="M 70 380 C 70 300, 110 270, 160 270 C 210 270, 250 300, 250 380 Z" fill="url(#bodyGrad)" />
+              <!-- Hoodie collar/inner -->
+              <path d="M 130 270 L 160 320 L 190 270 Z" fill="#0f172a" opacity="0.6"/>
+              <!-- Neck -->
+              <rect x="142" y="220" width="36" height="60" rx="8" fill="#fcd34d" />
+              <!-- Head -->
+              <ellipse cx="160" cy="175" rx="55" ry="62" fill="#fde68a" />
+              <!-- Hair -->
+              <path d="M 100 170 C 100 100, 220 100, 220 170 C 215 130, 185 115, 160 115 C 130 115, 105 135, 100 170 Z" fill="#1e293b" />
+              <!-- Glasses -->
+              <rect x="118" y="160" width="35" height="22" rx="6" fill="rgba(15, 23, 42, 0.1)" stroke="#1e293b" stroke-width="3"/>
+              <rect x="167" y="160" width="35" height="22" rx="6" fill="rgba(15, 23, 42, 0.1)" stroke="#1e293b" stroke-width="3"/>
+              <line x1="153" y1="171" x2="167" y2="171" stroke="#1e293b" stroke-width="3"/>
+              <!-- Eyes -->
+              <circle cx="135" cy="171" r="3.5" fill="#1e293b"/>
+              <circle cx="184" cy="171" r="3.5" fill="#1e293b"/>
+              <!-- Friendly Smile -->
+              <path d="M 148 205 Q 160 216 172 205" fill="none" stroke="#b45309" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+          </div>
+
+          <!-- Floating Badges -->
+          <div class="floating-badge badge-top-right">
+            <i class="fa-solid fa-code" style="color: #06b6d4;"></i>
+            <span>Clean Code & Fast</span>
+          </div>
+          <div class="floating-badge badge-bottom-left">
+            <i class="fa-solid fa-star" style="color: #f59e0b;"></i>
+            <span>5.0 Rating Kepuasan</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         STATS STRIP
+         ====================================================================== -->
+    <section class="stats-strip" aria-label="Statistik Pengalaman">
+      <div class="container stats-grid">
+        <div class="stat-item">
+          <div class="stat-num gradient-text" data-target="3" data-suffix="+">3+</div>
+          <div class="stat-label">Tahun Pengalaman</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num gradient-text" data-target="25" data-suffix="+">25+</div>
+          <div class="stat-label">Proyek Selesai</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num gradient-text" data-target="15" data-suffix="+">15+</div>
+          <div class="stat-label">Klien Puas</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num gradient-text" data-target="99" data-suffix="%">99%</div>
+          <div class="stat-label">Kepuasan Klien</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         ABOUT & SKILLS SECTION
+         ====================================================================== -->
+    <section class="section-padding" id="tentang">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-regular fa-user"></i> Tentang Saya</span>
+          <h2 class="section-title">Dedikasi Membangun Solusi Digital Berkualitas</h2>
+          <p class="section-desc">Kombinasi antara logika pemrograman yang efisien dengan rasa estetika desain yang kuat.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Biography Card -->
+          <div class="about-card">
+            <h3 style="font-size: 1.45rem; font-weight: 800; margin-bottom: 1rem;">Siapa Saya?</h3>
+            <p class="about-p">
+              Saya adalah seorang Full-Stack Web Developer yang berbasis di Indonesia dengan minat mendalam pada pengembangan antarmuka pengguna interaktif dan sistem backend yang tangguh.
+            </p>
+            <p class="about-p">
+              Fokus utama saya adalah menciptakan aplikasi web yang tidak hanya menarik secara visual, tetapi juga cepat, mudah diakses, serta memberikan pengalaman optimal di semua ukuran layar gawai.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight-box">
+                <i class="fa-solid fa-bolt"></i>
+                <h4>Performa Cepat</h4>
+                <p>Optimalisasi aset dan kode bersih untuk waktu muat instan.</p>
+              </div>
+              <div class="highlight-box">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <h4>100% Responsif</h4>
+                <p>Tampilan fleksibel mulai dari mobile hingga desktop.</p>
+              </div>
+              <div class="highlight-box">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h4>Arsitektur Aman</h4>
+                <p>Praktik terbaik dalam validasi dan keamanan web modern.</p>
+              </div>
+              <div class="highlight-box">
+                <i class="fa-solid fa-comments"></i>
+                <h4>Komunikatif</h4>
+                <p>Transparan dalam progres dan senang berdiskusi ide.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Skills Categorized -->
+          <div class="skills-column">
+            <!-- Frontend -->
+            <div class="skill-category">
+              <div class="skill-cat-title">
+                <i class="fa-solid fa-code"></i>
+                <span>Frontend Development</span>
+              </div>
+              <div class="skill-tags">
+                <span class="skill-tag"><i class="fa-brands fa-html5" style="color: #e34f26;"></i> HTML5</span>
+                <span class="skill-tag"><i class="fa-brands fa-css3-alt" style="color: #1572b6;"></i> CSS3 / SCSS</span>
+                <span class="skill-tag"><i class="fa-brands fa-js" style="color: #f7df1e;"></i> JavaScript (ES6+)</span>
+                <span class="skill-tag"><i class="fa-brands fa-react" style="color: #61dafb;"></i> React.js</span>
+                <span class="skill-tag"><i class="fa-solid fa-wind" style="color: #38bdf8;"></i> Tailwind CSS</span>
+                <span class="skill-tag"><i class="fa-brands fa-bootstrap" style="color: #7952b3;"></i> Bootstrap</span>
+              </div>
+            </div>
+
+            <!-- Backend & Databases -->
+            <div class="skill-category">
+              <div class="skill-cat-title">
+                <i class="fa-solid fa-server"></i>
+                <span>Backend & Database</span>
+              </div>
+              <div class="skill-tags">
+                <span class="skill-tag"><i class="fa-brands fa-node-js" style="color: #339933;"></i> Node.js</span>
+                <span class="skill-tag"><i class="fa-solid fa-cubes"></i> Express.js</span>
+                <span class="skill-tag"><i class="fa-solid fa-database" style="color: #336791;"></i> PostgreSQL</span>
+                <span class="skill-tag"><i class="fa-solid fa-leaf" style="color: #47a248;"></i> MongoDB</span>
+                <span class="skill-tag"><i class="fa-solid fa-network-wired"></i> RESTful APIs</span>
+              </div>
+            </div>
+
+            <!-- Tools & Workflow -->
+            <div class="skill-category">
+              <div class="skill-cat-title">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <span>Alat & Workflow</span>
+              </div>
+              <div class="skill-tags">
+                <span class="skill-tag"><i class="fa-brands fa-git-alt" style="color: #f05032;"></i> Git & GitHub</span>
+                <span class="skill-tag"><i class="fa-brands fa-figma" style="color: #f24e1e;"></i> Figma UI/UX</span>
+                <span class="skill-tag"><i class="fa-solid fa-terminal"></i> Terminal / CLI</span>
+                <span class="skill-tag"><i class="fa-solid fa-v"></i> VS Code</span>
+                <span class="skill-tag"><i class="fa-solid fa-cloud"></i> Vercel / Netlify</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SERVICES SECTION
+         ====================================================================== -->
+    <section class="section-padding" style="background: var(--bg-surface-elevated);" id="layanan">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-wand-magic-sparkles"></i> Layanan</span>
+          <h2 class="section-title">Solusi yang Dapat Saya Berikan</h2>
+          <p class="section-desc">Membantu bisnis, agensi, dan individu merealisasikan produk digital unggul.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <h3 class="service-title">Pengembangan Web Responsif</h3>
+            <p class="service-desc">
+              Pembuatan website kustom, landing page interaktif, hingga portal web kompleks dengan HTML, CSS, JavaScript, dan framework modern yang cepat dan SEO-friendly.
+            </p>
+            <div class="service-features">
+              <div class="service-feature"><i class="fa-solid fa-check"></i> Kode Semantik & Standar W3C</div>
+              <div class="service-feature"><i class="fa-solid fa-check"></i> Dukungan Multi-Browser & Mobile</div>
+              <div class="service-feature"><i class="fa-solid fa-check"></i> Optimasi Kecepatan Muat</div>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa-solid fa-palette"></i>
+            </div>
+            <h3 class="service-title">Desain UI/UX & Prototipe</h3>
+            <p class="service-desc">
+              Perancangan antarmuka visual yang estetik, sistematis, dan berfokus pada kemudahan pengguna menggunakan Figma untuk memvalidasi ide sebelum masuk tahap koding.
+            </p>
+            <div class="service-features">
+              <div class="service-feature"><i class="fa-solid fa-check"></i> Wireframing & Design System</div>
+              <div class="service-feature"><i class="fa-solid fa-check"></i> Prototipe Interaktif Klik</div>
+              <div class="service-feature"><i class="fa-solid fa-check"></i> Riset Alur Pengguna (User Flow)</div>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa-solid fa-gauge-high"></i>
+            </div>
+            <h3 class="service-title">Optimasi & Integrasi API</h3>
+            <p class="service-desc">
+              Meningkatkan performa web yang lambat, memperbaiki bug antarmuka, serta menghubungkan front-end dengan berbagai API pihak ketiga (pembayaran, analitik, dsb).
+            </p>
+            <div class="service-features">
+              <div class="service-feature"><i class="fa-solid fa-check"></i> Audit Kecepatan Lighthouse</div>
+              <div class="service-feature"><i class="fa-solid fa-check"></i> Integrasi RESTful API</div>
+              <div class="service-feature"><i class="fa-solid fa-check"></i> Pemeliharaan & Refactoring Kode</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         FEATURED PROJECTS SECTION
+         ====================================================================== -->
+    <section class="section-padding" id="proyek-unggulan">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-star"></i> Proyek Terpilih</span>
+          <h2 class="section-title">Karya & Eksplorasi Terbaru</h2>
+          <p class="section-desc">Beberapa proyek unggulan yang merefleksikan keahlian teknis dan perhatian saya terhadap detail.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card" data-category="web">
+            <div class="project-thumb">
+              <span class="project-category-badge">Web Application</span>
+              <!-- SVG Visual Mockup -->
+              <svg viewBox="0 0 800 450" width="100%" height="100%">
+                <defs>
+                  <linearGradient id="p1Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#4f46e5" />
+                    <stop offset="100%" stop-color="#06b6d4" />
+                  </linearGradient>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#p1Grad)" />
+                <rect x="80" y="50" width="640" height="350" rx="12" fill="#0f172a" opacity="0.85" />
+                <circle cx="115" cy="80" r="5" fill="#ef4444" />
+                <circle cx="135" cy="80" r="5" fill="#f59e0b" />
+                <circle cx="155" cy="80" r="5" fill="#10b981" />
+                <rect x="110" y="110" width="160" height="240" rx="8" fill="#1e293b" />
+                <rect x="290" y="110" width="190" height="110" rx="8" fill="#1e293b" />
+                <rect x="500" y="110" width="190" height="110" rx="8" fill="#1e293b" />
+                <rect x="290" y="240" width="400" height="110" rx="8" fill="#1e293b" />
+              </svg>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">E-Commerce Gadget Store</h3>
+              <p class="project-desc">
+                Toko daring modern dengan keranjang belanja real-time, filter katalog bertingkat, dan checkout wizard intuitif.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">HTML5</span>
+                <span class="tech-badge">CSS3</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">LocalStorage</span>
+              </div>
+              <div class="project-actions">
+                <button type="button" class="btn btn-secondary btn-sm open-modal-btn" data-id="1">
+                  <i class="fa-solid fa-circle-info"></i> Detail
+                </button>
+                <a href="proyek.html" class="btn btn-primary btn-sm">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Preview
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card" data-category="frontend">
+            <div class="project-thumb">
+              <span class="project-category-badge">Dashboard</span>
+              <svg viewBox="0 0 800 450" width="100%" height="100%">
+                <defs>
+                  <linearGradient id="p2Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#2563eb" />
+                    <stop offset="100%" stop-color="#10b981" />
+                  </linearGradient>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#p2Grad)" />
+                <rect x="80" y="50" width="640" height="350" rx="12" fill="#0f172a" opacity="0.85" />
+                <circle cx="115" cy="80" r="5" fill="#ef4444" />
+                <circle cx="135" cy="80" r="5" fill="#f59e0b" />
+                <circle cx="155" cy="80" r="5" fill="#10b981" />
+                <line x1="110" y1="300" x2="680" y2="300" stroke="#334155" stroke-width="2"/>
+                <polyline points="130,280 230,220 330,250 430,170 530,190 650,130" fill="none" stroke="#10b981" stroke-width="4" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">SaaS Financial & Analytics Dashboard</h3>
+              <p class="project-desc">
+                Dashboard metrik analitik bisnis dengan visualisasi chart data, tabel dinamis, serta ekspor laporan berkala.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">CSS Grid</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">SVG Charts</span>
+                <span class="tech-badge">Dark Mode</span>
+              </div>
+              <div class="project-actions">
+                <button type="button" class="btn btn-secondary btn-sm open-modal-btn" data-id="2">
+                  <i class="fa-solid fa-circle-info"></i> Detail
+                </button>
+                <a href="proyek.html" class="btn btn-primary btn-sm">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Preview
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card" data-category="web">
+            <div class="project-thumb">
+              <span class="project-category-badge">Productivity</span>
+              <svg viewBox="0 0 800 450" width="100%" height="100%">
+                <defs>
+                  <linearGradient id="p3Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#7c3aed" />
+                    <stop offset="100%" stop-color="#ec4899" />
+                  </linearGradient>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#p3Grad)" />
+                <rect x="80" y="50" width="640" height="350" rx="12" fill="#0f172a" opacity="0.85" />
+                <circle cx="115" cy="80" r="5" fill="#ef4444" />
+                <circle cx="135" cy="80" r="5" fill="#f59e0b" />
+                <circle cx="155" cy="80" r="5" fill="#10b981" />
+                <!-- 3 Kanban Columns -->
+                <rect x="110" y="115" width="170" height="240" rx="8" fill="#1e293b" />
+                <rect x="310" y="115" width="170" height="240" rx="8" fill="#1e293b" />
+                <rect x="510" y="115" width="170" height="240" rx="8" fill="#1e293b" />
+              </svg>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Aplikasi Kanban (TaskMaster)</h3>
+              <p class="project-desc">
+                Papan manajemen tugas kolaboratif dengan fitur drag & drop mulus, filter prioritas, dan auto-save lokal.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">HTML5 Drag&Drop</span>
+                <span class="tech-badge">Vanilla JS</span>
+                <span class="tech-badge">CSS Animations</span>
+              </div>
+              <div class="project-actions">
+                <button type="button" class="btn btn-secondary btn-sm open-modal-btn" data-id="3">
+                  <i class="fa-solid fa-circle-info"></i> Detail
+                </button>
+                <a href="proyek.html" class="btn btn-primary btn-sm">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Preview
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- View All Projects Button -->
+        <div style="text-align: center; margin-top: 3.5rem;">
+          <a href="proyek.html" class="btn btn-outline" style="padding: 0.9rem 2.2rem; font-size: 1.05rem;">
+            <span>Lihat Semua Proyek di Galeri</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         TESTIMONIALS SECTION
+         ====================================================================== -->
+    <section class="section-padding" style="background: var(--bg-surface-elevated);" id="testimoni">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-regular fa-comment-dots"></i> Testimoni</span>
+          <h2 class="section-title">Apa Kata Klien & Rekan Kerja</h2>
+          <p class="section-desc">Ulasan nyata mengenai komitmen, kualitas hasil, dan profesionalitas kerja sama.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "Alex menyelesaikan perombakan landing page perusahaan kami lebih cepat dari jadwal dengan hasil yang jauh melampaui ekspektasi. Konversi pengunjung kami melonjak 35% setelah peluncuran!"
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">BR</div>
+              <div>
+                <div class="author-name">Budi Raharjo</div>
+                <div class="author-role">Founder, TechNusantara</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "Keterampilan kodingnya sangat rapi dan mudah dirawat. Selain itu komunikasinya sangat responsif dan selalu memberikan saran solutif saat menghadapi kendala teknis."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background: linear-gradient(135deg, #10b981, #06b6d4);">SA</div>
+              <div>
+                <div class="author-name">Siti Anggraini</div>
+                <div class="author-role">Product Lead, Inovasi Kreatif</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "Sangat memperhatikan detail mikro antarmuka. Transisi, responsivitas di smartphone, dan waktu loading websitenya benar-benar sangat impresif!"
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background: linear-gradient(135deg, #f59e0b, #ef4444);">DW</div>
+              <div>
+                <div class="author-name">Dimas Wicaksono</div>
+                <div class="author-role">Managing Director, StudioKarya</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         CTA BANNER
+         ====================================================================== -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="cta-banner">
+          <h2 class="cta-title">Punya Ide Proyek Menarik?</h2>
+          <p class="cta-desc">
+            Saya selalu terbuka untuk mendiskusikan proyek baru, kolaborasi kreatif, maupun peluang kerja penuh waktu. Mari wujudkan ide Anda menjadi produk digital luar biasa.
+          </p>
+          <a href="kontak.html" class="btn cta-btn">
+            <i class="fa-solid fa-paper-plane"></i> Hubungi Saya Sekarang
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================================
+       PROJECT DETAIL MODAL POPUP
+       ====================================================================== -->
+  <div id="project-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-dialog">
+      <button id="modal-close-btn" class="modal-close-btn" aria-label="Tutup Dialog Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div id="modal-img-container" class="modal-hero-img"></div>
+      <div class="modal-body">
+        <span id="modal-category" class="modal-category-tag">Kategori</span>
+        <h2 id="modal-title" class="modal-title">Judul Proyek</h2>
+        <p id="modal-desc" class="modal-desc">Deskripsi proyek yang lengkap.</p>
+
+        <div class="modal-detail-section">
+          <h4 class="modal-detail-title"><i class="fa-solid fa-puzzle-piece" style="color: var(--accent-primary);"></i> Tantangan Proyek</h4>
+          <p id="modal-challenges" class="modal-desc" style="margin-bottom: 0.8rem;"></p>
+        </div>
+
+        <div class="modal-detail-section">
+          <h4 class="modal-detail-title"><i class="fa-solid fa-lightbulb" style="color: #f59e0b;"></i> Solusi Teknis</h4>
+          <p id="modal-solution" class="modal-desc" style="margin-bottom: 0.8rem;"></p>
+        </div>
+
+        <div class="modal-detail-section">
+          <h4 class="modal-detail-title"><i class="fa-solid fa-list-check" style="color: var(--success);"></i> Fitur Utama</h4>
+          <div id="modal-features" class="modal-feature-list"></div>
+        </div>
+
+        <div class="modal-detail-section">
+          <h4 class="modal-detail-title"><i class="fa-solid fa-layer-group" style="color: var(--accent-secondary);"></i> Teknologi yang Digunakan</h4>
+          <div id="modal-tech" class="project-tech"></div>
+        </div>
+
+        <div class="modal-footer-actions">
+          <a id="modal-live-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo Langsung
+          </a>
+          <a id="modal-github-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+            <i class="fa-brands fa-github"></i> Lihat Repository
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       FOOTER
+       ====================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="nav-brand">
+            <span class="nav-brand-logo">AP</span>
+            <span>Alex<span class="gradient-text">.dev</span></span>
+          </a>
+          <p class="footer-brand-p">
+            Website portofolio profesional untuk menampilkan karya rekayasa web, eksplorasi teknologi modern, dan solusi desain antarmuka.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Navigasi Halaman</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Beranda</a></li>
+            <li><a href="proyek.html" class="footer-link">Galeri Proyek</a></li>
+            <li><a href="kontak.html" class="footer-link">Hubungi Saya</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Kategori Proyek</h4>
+          <ul class="footer-links">
+            <li><a href="proyek.html" class="footer-link">Web Applications</a></li>
+            <li><a href="proyek.html" class="footer-link">Frontend & Dashboards</a></li>
+            <li><a href="proyek.html" class="footer-link">UI/UX & Design Systems</a></li>
+            <li><a href="proyek.html" class="footer-link">Mobile Responsive</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Terhubung</h4>
+          <ul class="footer-links">
+            <li><a href="https://github.com/iqbalee-creator" target="_blank" rel="noopener noreferrer" class="footer-link"><i class="fa-brands fa-github"></i> GitHub</a></li>
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-link"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer-link"><i class="fa-brands fa-x-twitter"></i> Twitter / X</a></li>
+            <li><a href="mailto:alex.pratama@example.com" class="footer-link"><i class="fa-solid fa-envelope"></i> Email Langsung</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Alex Pratama. Dibuat dengan HTML, CSS, dan JavaScript vanilla.</div>
+        <div>Status: Siap Menerima Proyek Baru 🚀</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back To Top Floating Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Kembali ke Bagian Atas Halaman" title="Kembali ke Atas">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
